@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="./pictures/WhatsApp Image 2025-12-25 at 12.16.14 PM.jpeg" type="image/x-icon">
+    <title>Crafted Fragrance | Premium Perfumes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+
+    <nav>
+        <div class="logo">CRAFTED FRAGRANCE</div>
+        <ul class="nav-links">
+            <li onclick="showPage('home')">Home</li>
+            <li onclick="showPage('male')">Male</li>
+            <li onclick="showPage('female')">Female</li>
+            <li onclick="showPage('oud')">Oud</li>
+            <li onclick="showPage('unisex')">Unisex</li>
+            <li onclick="showPage('contact')">Contact</li>
+        </ul>
+        <div class="cart-icon" onclick="showPage('cart')">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <section id="sale-alert">
+        <div class="alert-box">
+            <h2>JOIN THE ELITE CIRCLE !!</h2>
+            <p>Get 20% OFF on your first order. Enter your email for updates!</p><br>
+            <input type="email" id="subscriber-email" placeholder="yourname@email.com">
+            <button onclick="subscribe()">SUBSCRIBE NOW</button>
+        </div>
+    </section>
+
+    <div id="home" class="page active-page">
+        <h2>Our Best Selling Products 😍</h2>
+        <div class="product-grid">
+            <div class="card male-card"><img src="./pictures/ChatGPT Image Jun 16, 2025, 12_59_44 PM.png" alt="P1"><div class="card-content"><h3> Zenith <br> Influenced by Isseymiyake</h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('Zenith', 'Rs 2,000')">Add to Cart</button></div></div>
+            <div class="card female-card"><img src="./pictures/20250809_131500.jpg" alt="P2"><div class="card-content"><h3>Surge <br> Influenced by Gucci Flora</h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Surge', 'Rs 1,600')">Add to Cart</button></div></div>
+            <div class="card oud-card"><img src="./pictures/IMG-20250624-WA0004.jpg" alt="P3"><div class="card-content"><h3>Adore <br> Influenced by Jadore</h3><p>Rs 1,500</p><button class="btn-add" onclick="addToCart('Adore', 'Rs 1,500')">Add to Cart</button></div></div>
+            <div class="card unisex-card"><img src="./pictures/20250619_230930.jpg" alt="P4"><div class="card-content"><h3>Trench <br> Influenced by My Burrbury</h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Trench', 'Rs 1,600')">Add to Cart</button></div></div> 
+        </div>
+    </div>
+
+    <div id="male" class="page">
+        <h2>Male Collection 🤴🏻</h2>
+        <div class="product-grid">
+            <div class="card male-card"><img src="./pictures/ChatGPT Image Jun 16, 2025, 12_59_44 PM.png" alt="M1"><div class="card-content"><h3>Zenith <br> Influenced by Isseymiyake</h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('Zenith', 'Rs 2,000')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/ChatGPT Image Jun 21, 2025, 12_44_22 PM.png" alt="M2"><div class="card-content"><h3>Vortex <br> Influenced by Suvage Dior </h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('Vortex', 'Rs 2,000')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/IMG-20250623-WA0017.jpg" alt="M3"><div class="card-content"><h3>Legend <br> Influenced by David Beckham </h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Legend', 'Rs 1,600')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/ChatGPT Image Jun 22, 2025, 01_11_48 PM.png" alt="M4"><div class="card-content"><h3>Echo <br> Influenced by Ombre Nomade</h3><p>Rs 1,500</p><button class="btn-add" onclick="addToCart('Echo', 'Rs 1,500')">Add to Cart</button></div></div> 
+             <div class="card male-card"><img src="./pictures/IMG-20250623-WA0013.jpg" alt="M1"><div class="card-content"><h3>Emperor  <br> Influenced by Aventus Creed</h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('Emperor', 'Rs 2,000')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/Gemini_Generated_Image_l4dwvel4dwvel4dw.png" alt="M3"><div class="card-content"><h3> Aura <br> Influenced by Office</h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Aura', 'Rs 1,600')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/IMG-20250724-WA0016.jpg" alt="M4"><div class="card-content"><h3>Horizon<br> Influenced by Thomas Kosmala no 4</h3><p>Rs 1,500</p><button class="btn-add" onclick="addToCart('Horizon', 'Rs 1,500')">Add to Cart</button></div></div> 
+              <div class="card male-card"><img src="./pictures/ChatGPT Image Jul 27, 2025, 12_08_41 PM.png" alt="M1"><div class="card-content"><h3>Vibe<br> Influenced by Joop</h3><p>Rs 1,500</p><button class="btn-add" onclick="addToCart('Vibe', 'Rs 1,500')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/Snapchat-593667964.jpg" alt="M2"><div class="card-content"><h3> Destiny<br> Influenced by  Hugo Boss</h3><p>Rs 1,500</p><button class="btn-add" onclick="addToCart('Destiny', 'Rs 1,500')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/Elegance in a Bottle.png" alt="M3"><div class="card-content"><h3> Elegance <br> Influenced by Lacoste white</h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Elegance', 'Rs 1,600')">Add to Cart</button></div></div>
+             <div class="card male-card"><img src="./pictures/ChatGPT Image Jul 22, 2025, 05_07_24 PM.png" alt="M1"><div class="card-content"><h3>Heritage<br> Influenced by Tuscan Leather</h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('Heritage', 'Rs 2,000')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/20250806_154335.jpg" alt="M2"><div class="card-content"><h3> Prism<br> Influenced by  Spice Bomb</h3><p>Rs 1,500</p><button class="btn-add" onclick="addToCart('Prism', 'Rs 1,500')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/IMG-20250825-WA0017.jpg" alt="M3"><div class="card-content"><h3> Platinium <br> Influenced by Janan Platinium</h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Platinium', 'Rs 1,600')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/Snapchat-1789236582.jpg" alt="M4"><div class="card-content"><h3>Party Sharty<br> Influenced by  9pm</h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Party Sharty', 'Rs 1,600')">Add to Cart</button></div></div> 
+             <div class="card male-card"><img src="./pictures/Sleek Perfume Bottle _Spark_ Displayed.png" alt="M1"><div class="card-content"><h3>Spark<br> Influenced by Mancera Red Tobacco</h3><p>Rs 1,700</p><button class="btn-add" onclick="addToCart('Spark', 'Rs 1,700')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/20250821_184625.jpg" alt="M2"><div class="card-content"><h3> Calm<br> Influenced by  Csedrate Boise</h3><p>Rs 1,500</p><button class="btn-add" onclick="addToCart('Calm', 'Rs 1,500')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/Snapchat-654286.jpg" alt="M3"><div class="card-content"><h3> Wave  <br> Influenced by  Cool Water</h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Wave', 'Rs 1,600')">Add to Cart</button></div></div> 
+             <div class="card male-card"><img src="./pictures/Snapchat-277109683.jpg" alt="M1"><div class="card-content"><h3>Rizz<br> Influenced by Blue De Channel</h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('Rizz', 'Rs 2,000')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/Crafted Fragrance Bottled Elegance.png" alt="M2"><div class="card-content"><h3> Mawahib<br> Influenced by  Marj</h3><p>Rs 1,500</p><button class="btn-add" onclick="addToCart('Mawahib', 'Rs 2,000')">Add to Cart</button></div></div>
+            <div class="card male-card"><img src="./pictures/Habibi Perfume and Desert Serenity.png" alt="M3"><div class="card-content"><h3> Habibi <br> Influenced by  Bin Shiekh</h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Habibi', 'Rs 1,600')">Add to Cart</button></div></div>
+        </div>
+    </div>
+
+    <div id="female" class="page">
+        <h2>Feminine Elegance 👸🏻</h2>
+        <div class="product-grid">
+            <div class="card female-card"><img src="./pictures/20250619_230930.jpg" alt="F1"><div class="card-content"><h3>Trench <br> Influenced by My Burrbury </h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Trench', 'Rs 1,600')">Add to Cart</button></div></div>
+            <div class="card female-card"><img src="./pictures/IMG-20250624-WA0004.jpg" alt="F2"><div class="card-content"><h3>Adore <br> Influenced by Jadore</h3><p>Rs 1,500</p><button class="btn-add" onclick="addToCart('Adore', 'Rs 1,500')">Add to Cart</button></div></div>
+            <div class="card female-card"><img src="./pictures/20250809_131500.jpg" alt="F3"><div class="card-content"><h3>Surge <br> Influenced by Gucci Flora</h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Surge', 'Rs 1,600')">Add to Cart</button></div></div>
+            <div class="card female-card"><img src="./pictures/IMG-20250624-WA0008.jpg" alt="F4"><div class="card-content"><h3>Thrive <br> Influenced by Gucci Bloom</h3><p>Rs 1,700</p><button class="btn-add" onclick="addToCart('Thrive', 'Rs 1,700')">Add to Cart</button></div></div> 
+             <div class="card female-card"><img src="./pictures/IMG-20250625-WA0000.jpg" alt="F1"><div class="card-content"><h3>Blush <br> Influenced by Sexy Ruby </h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('Blush', 'Rs 2,000')">Add to Cart</button></div></div>
+            <div class="card female-card"><img src="./pictures/IMG-20250825-WA0016.jpg" alt="F2"><div class="card-content"><h3>Molecule <br> Influenced by Armani My Way</h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Molecule', 'Rs 1,600')">Add to Cart</button></div></div>
+            <div class="card female-card"><img src="./pictures/1762787352737.jpg" alt="F3"><div class="card-content"><h3>Leading Lady <br> Influenced by Sabaya</h3><p>Rs 1,600</p><button class="btn-add" onclick="addToCart('Leading Lady', 'Rs 1,600')">Add to Cart</button></div></div>
+            <div class="card female-card"><img src="./pictures/20250730_155229.jpg" alt="F4"><div class="card-content"><h3>Nexus <br> Influenced by Y by YSL</h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('Nexus', 'Rs 2,000')">Add to Cart</button></div></div> 
+             <div class="card female-card"><img src="./pictures/Crafted Fragrance with Jasmine Blossoms.png" alt="F4"><div class="card-content"><h3>Motia<br> Traditional perfume</h3><p>Rs 1,400</p><button class="btn-add" onclick="addToCart('Motia', 'Rs 1,400')">Add to Cart</button></div></div>
+        </div>
+    </div>
+
+    <div id="oud" class="page">
+        <h2>Oud Series ✨</h2>
+        <div class="product-grid">
+            <div class="card oud-card"><img src="./pictures/IMG-20250723-WA0009.jpg" alt="O1"><div class="card-content"><h3>GOAT <BR> Influenced by White Oudh</BR></h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('GOAT', 'Rs 2,000')">Add to Cart</button></div></div>
+            <div class="card oud-card"><img src="./pictures/ChatGPT Image Jul 24, 2025, 05_29_07 PM.png" alt="O2"><div class="card-content"><h3>Ghani <br> Influenced by Ameer ul Oudh</h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('Ghani', 'Rs 2,000')">Add to Cart</button></div></div>
+            <div class="card oud-card"><img src="./pictures/Oudacious Perfume by Crafted Fragrance.png" alt="O3"><div class="card-content"><h3>Oudacious <br> Influenced by Ignite Oudh</h3><p>Rs 2,100</p><button class="btn-add" onclick="addToCart('Oudacious', 'Rs 2,100')">Add to Cart</button></div></div>
+            <div class="card oud-card"><img src="./pictures/Oudh Allure in Mystical Smoke.png" alt="O4"><div class="card-content"><h3>Oudh Allure<br> Influenced by Oudh Mood</h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('Oudh Allure', 'Rs 2,000')">Add to Cart</button></div></div> 
+              <div class="card oud-card"><img src="./pictures/Woody Essence Perfume on Wood.png" alt="O4"><div class="card-content"><h3>Woody Essence <br> Influenced by Oudh Wood</h3><p>Rs 2,200</p><button class="btn-add" onclick="addToCart('Woody Essence', 'Rs 2,200')">Add to Cart</button></div></div>
+                <div class="card oud-card"><img src="./pictures/Crafted Fragrance Amidst the Smoke.png" alt="O4"><div class="card-content"><h3>Bomb <br> Influenced by gucci Oudh</h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('Bomb', 'Rs 2,000')">Add to Cart</button></div></div>
+                  <div class="card oud-card"><img src="./pictures/Oudh Gulistan in a Rose Garden.png" alt="O4"><div class="card-content"><h3>Oudh Gulistan <br> Influenced by Oudh & Rose</h3><p>Rs 2,000</p><button class="btn-add" onclick="addToCart('Oudh Gulistan', 'Rs 2,000')">Add to Cart</button></div></div>
+        </div>
+    </div>
+
+    <div id="unisex" class="page">
+        <h2>Unisex Collection 🌿</h2>
+        <div class="product-grid">
+            <div class="card unisex-card"><img src="./pictures/Crafted Fragrance Bottle Close-up.png" alt="U1"><div class="card-content"><h3>La'aman <br> Influenced by Backarat Rouge 540</h3><p>Rs 1,500</p><button class="btn-add" onclick="addToCart('Laaman', 'Rs 1,500')">Add to Cart</button></div></div>
+            <div class="card unisex-card"><img src="./pictures/IMG-20250725-WA0043.jpg" alt="U2"><div class="card-content"><h3>Luxury <br> Influenced By Azzaro Wanted</h3><p>Rs 1,500</p><button class="btn-add" onclick="addToCart('Luxury', 'Rs 1,500')">Add to Cart</button></div></div>
+        </div>
+    </div>
+
+    <div id="cart" class="page">
+        <h2>Your Cart</h2>
+        <div id="cart-items-display" style="text-align:center; margin-bottom:30px;"></div>
+        
+        <form id="checkout-form">
+            <h3>Delivery Details</h3><br>
+            <div class="form-group"><label>Name</label><input type="text" id="cust-name" required></div>
+            <div class="form-group"><label>Phone</label><input type="text" id="cust-phone" required></div>
+            <div class="form-group"><label>Address</label><textarea id="cust-address" rows="3" required></textarea></div>
+            <button type="button" onclick="checkoutWhatsApp()" class="btn-add" style="background: #25D366; width: 100%;">CHECKOUT VIA WHATSAPP</button>
+        </form>
+    </div>
+
+    <div id="contact" class="page">
+        <h2>Connect With Us</h2>
+        <div class="contact-links">
+            <a href="https://wa.me/923200205380" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://facebook.com/crafted fragrance" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/_crafted_fragrance__" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <p><strong>WhatsApp:</strong> 0320 0205380</p>
+            <p><strong>Instagram:</strong> @_crafted_fragrance__</p>
+            <p><strong>Facebook:</strong> Crafted Fragrance</p>
+        </div>
+    </div>
+
+    <script src="./app.js"> </script>
+</body>
+</html>
